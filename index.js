@@ -4,13 +4,15 @@ var addButton = document.getElementById('add');
 var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 var taskList = document.getElementById('tasks');
 var text = document.getElementsByTagName('text');
+var main = document.getElementsByClassName('main')[0];
+document.getElementById('All').style.color="black";
 
 // Adding a task to the list from input list
 addButton.addEventListener('click',function()
 {
     var content = input.value;
     if(content=='')
-    alert('Text can not be remained empty');
+    alert('Text can not be empty');
     else{
     input.value='';
     taskId +=1;
@@ -28,7 +30,7 @@ addButton.addEventListener('click',function()
 
 
 // usage of all the delete buttons 
-window.addEventListener('click', function(event){
+main.addEventListener('click', function(event){
     var target = event.target;
    
     if(target.className.includes('delete'))
@@ -67,6 +69,7 @@ let checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
         checkboxes.forEach(element =>{
             document.getElementById('All').style.color="black";
+
             document.getElementById('Complete').style.color="lightgray";
             document.getElementById('uncomplete').style.color="lightgray";
             let visibile = document.getElementById(element.id.substring(4));
