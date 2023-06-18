@@ -1,0 +1,131 @@
+body{
+    background-color: lightgray;
+}
+
+.main{
+    background-color: whitesmoke;
+    width: 35%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.input_tasks{
+    background-color: lightgray;
+    padding: 4%;
+    font-size: 1.4rem;
+    border-radius: 10px;
+
+}
+#task{
+    width: 80%;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+    margin-left: 2%;
+    margin-right: 10px;
+}
+
+#add{
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+    display: none;
+    padding:0%;
+    margin-left: 8px;
+}
+.input_tasks:hover #add{
+    display: inline;
+}
+
+.right
+{
+    float: right;
+}
+.middle{
+    padding: 1.5%;
+}
+.middle button{
+    color: rgb(155, 152, 152);
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+}
+.icon{
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: lightgray;
+}
+.list{
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+li{
+list-style: none;
+padding-right: 4%;
+}
+ul{
+    padding-left: 10px;
+}
+
+
+
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Style the custom checkbox */
+  label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  label{
+    font-size: 1.8rem;
+  }
+  /* Style the checked state of the custom checkbox */
+  input[type="checkbox"]:checked + label::before {
+    background-color: #000;
+  }
+  
+.delete{
+    float: right;
+    font-size: 1.4rem;
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+li:hover .delete{
+    display: inline;
+}
+
+  .footer{
+    color: rgb(155, 152, 152);
+    font-size: medium;
+}
+.footer span{
+    color: rgb(103, 106, 108);
+}
+
+.footer button{
+    background-color: transparent;
+    border: none;
+    color: rgb(155, 152, 152);
+    font-size: small;
+}
+button{
+    cursor: pointer;
+}
+#All{
+    margin-left: 45%;
+}
